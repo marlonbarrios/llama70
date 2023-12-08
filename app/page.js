@@ -314,11 +314,7 @@ export default function HomePage() {
           setSize={setModel}
         />
 
-        {image && (
-          <div>
-            <img src={image} className="mt-6 sm:rounded-xl" />
-          </div>
-        )}
+        
 
         {audio && (
           <div>

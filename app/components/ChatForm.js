@@ -1,5 +1,5 @@
 import { Uploader } from "uploader";
-import { UploadButton } from "react-uploader";
+// import { UploadButton } from "react-uploader";
 import Metrics from "./Metrics";
 const uploader = Uploader({
   apiKey: "public_kW15biSARCJN7FAz6rANdRg3pNkh",
@@ -63,20 +63,20 @@ const ChatForm = ({ prompt, setPrompt, onSubmit, handleFileUpload, metrics, comp
           completion={completion} />
 
         <form className="w-full flex" onSubmit={handleSubmit}>
-          <UploadButton
+          {/* <UploadButton
             uploader={uploader}
             options={options}
             onComplete={(files) => handleFileUpload(files[0])}
           >
-            {({ onClick }) => (
+            {/* {({ onClick }) => (
               <button
                 className="p-3 border-gray-600 border-2 inline-flex hover:bg-gray-300 rounded-md mr-3"
                 onClick={onClick}
               >
                 Upload
               </button>
-            )}
-          </UploadButton>
+            )} */}
+        
           <textarea
             autoComplete="off"
             autoFocus
