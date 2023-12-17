@@ -1,6 +1,7 @@
 import { Uploader } from "uploader";
-// import { UploadButton } from "react-uploader";
 import Metrics from "./Metrics";
+import { CodeBracketIcon } from "@heroicons/react/20/solid";
+
 const uploader = Uploader({
   apiKey: "public_kW15biSARCJN7FAz6rANdRg3pNkh",
 });
@@ -54,35 +55,15 @@ const ChatForm = ({ prompt, setPrompt, onSubmit, handleFileUpload, metrics, comp
   };
 
   return (
-    <footer className="z-10 fixed bottom-0 left-0 right-0 bg-slate-100 border-t-2">
-      <div className="container max-w-2xl mx-auto p-5 pb-8">
-        <Metrics
-          startedAt={metrics.startedAt}
-          firstMessageAt={metrics.firstMessageAt}
-          completedAt={metrics.completedAt}
-          completion={completion} />
-
+    <footer className="z-5 fixed bottom-0 left-0 right-0 bg-slate-100 border-t">
+      <div className="container max-w-2xl mx-auto p-2">
         <form className="w-full flex" onSubmit={handleSubmit}>
-          {/* <UploadButton
-            uploader={uploader}
-            options={options}
-            onComplete={(files) => handleFileUpload(files[0])}
-          >
-            {/* {({ onClick }) => (
-              <button
-                className="p-3 border-gray-600 border-2 inline-flex hover:bg-gray-300 rounded-md mr-3"
-                onClick={onClick}
-              >
-                Upload
-              </button>
-            )} */}
-        
           <textarea
             autoComplete="off"
             autoFocus
             name="prompt"
-            className="flex-grow block w-full rounded-l-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:leading-6"
-            placeholder="Send a message"
+            className="flex-grow block w-full rounded-l-md border-0 py-1 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:leading-5"
+            placeholder="Type and Send a message"
             required={true}
             value={prompt}
             rows={1}
@@ -94,12 +75,18 @@ const ChatForm = ({ prompt, setPrompt, onSubmit, handleFileUpload, metrics, comp
             }}
           />
           <button
-            className="bg-gray-600 hover:bg-gray-800 items-center font-semibold text-white rounded-r-md px-5 py-3"
+            className="bg-gray-600 hover:bg-gray-800 items-center font-semibold text-white rounded-r-md px-4 py-2 text-sm"
             type="submit"
           >
             Chat
           </button>
         </form>
+        <Metrics
+          startedAt={metrics.startedAt}
+          firstMessageAt={metrics.firstMessageAt}
+          completedAt={metrics.completedAt}
+          completion={completion}
+        />
       </div>
     </footer>
   );

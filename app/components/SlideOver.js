@@ -48,7 +48,7 @@ export default function SlideOver({
                       <div className="bg-gray-700 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-white">
-                            🦙 Chat with a Llama
+                             Chat with Sati-AI
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
@@ -66,7 +66,7 @@ export default function SlideOver({
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-gray-300">
-                            A project from Replicate.
+                            A project created by Marlon Barrios Solano powered by Llama 2 and Replicate AI
                           </p>
                         </div>
                       </div>
@@ -164,10 +164,9 @@ export default function SlideOver({
                                 id="system-prompt-description"
                                 className="mt-2 text-xs text-gray-500"
                               >
-                                This is prepended to the prompt and helps guide
-                                system behavior.
+                                This model is programmed to be a Buddhist wisdom guide and a meditation coach by Marlon Barrios Solano
                               </p>
-                              <div className="mt-3">
+                              {/* <div className="mt-3">
                                 <textarea
                                   id="systemPrompt"
                                   name="systemPrompt"
@@ -178,7 +177,8 @@ export default function SlideOver({
                                     setSystemPrompt(e.target.value)
                                   }
                                 />
-                              </div>
+                              </div> */}
+
                             </div>
                           </div>
                           <div className="space-y-6 pb-5 pt-6">

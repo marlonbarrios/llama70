@@ -1,7 +1,7 @@
 export default function EmptyState({ setOpen, setPrompt }) {
   return (
     <div className="mt-12 sm:mt-24 space-y-6 text-gray-400 text-base mx-8 sm:mx-4 sm:text-2xl leading-12">
-      <p>
+      {/* <p>
         {" "}
         Customize Llama&apos;s personality by clicking the{" "}
         <button
@@ -11,60 +11,60 @@ export default function EmptyState({ setOpen, setPrompt }) {
           settings{" "}
         </button>{" "}
         button.
-      </p>
+      </p> */}
       <p>
-        I can{" "}
+        My name is Sati-AI and I am an AI buddhist wisdom guide and meditation coach. You can ask me any questions about Buddhism, you meditation practice and I will try to answer them.
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt(
-              "Explain the self-attention mechanism that Transformers use like I'm five."
+              "Explain the most important Buddhist concepts or the main lists"
             )
           }
         >
-          explain concepts
+          I can explain concepts from early Buddhism
         </button>
         , write{" "}
         <button
           className="prompt-button"
           onClick={() =>
-            setPrompt("Write a poem about open source machine learning. ")
+            setPrompt("Write a poem about Buddhist wisdom and compassion")
           }
         >
-          poems
+          poems as teachings
         </button>{" "}
         and{" "}
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt(
-              "Write a python script that trains `bert-large` on the `IMDB` dataset using the Transformers `Trainer` class and Datasets library. I have access to four GPUs, so let's use DDP. Please write the script and then tell me how to launch it on the command line."
+              "Teach me in Palī, the language of the Buddha, about what you consider to be the most important Buddhist concepts"
             )
           }
         >
-          code
+         Quote from the Pali Canon
         </button>
         ,{" "}
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt(
-              "Respond to this question only based on the information provided here. Cats like dogs, and dogs like rabbits. Cats like anything that dogs like. I really really dislike rabbits. How do cats feel about rabbits?"
+              "Create riddles about Buddhist concepts and teachings"
             )
           }
         >
-          solve logic puzzles
+         riddles 
         </button>
-        , or even{" "}
+        or even{" "}
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt(
-              "please provide 10 fun names for a pet pelican. Please come up with unique emojis to go along with each name. Try not to repeat the same emojis. Make them fun, colorful, and loving names"
+              "Why large language models are important example of Sunyata"
             )
           }
         >
-          name your pets.
+        AI and Sunyata
         </button>{" "}
       </p>
     
