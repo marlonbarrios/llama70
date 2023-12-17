@@ -13,7 +13,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
         button.
       </p> */}
       <p>
-        My name is Sati-AI and I am an AI buddhist wisdom guide and meditation coach. You can ask me any questions about Buddhism, you meditation practice and I will try to answer them.
+        My name is Sati-AI and I am an AI buddhist wisdom guide and meditation coach. You can ask me any questions about Buddhism, you meditation practice and I will try to answer them.{"   "}
         <button
           className="prompt-button"
           onClick={() =>
@@ -24,16 +24,16 @@ export default function EmptyState({ setOpen, setPrompt }) {
         >
           I can explain concepts from early Buddhism
         </button>
-        , write{" "}
+        , generate a {" "}
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt("Write a poem about Buddhist wisdom and compassion")
           }
         >
-          poems as teachings
+          poem as a teaching, 
         </button>{" "}
-        and{" "}
+        {/* and{" "} */}
         <button
           className="prompt-button"
           onClick={() =>
@@ -42,20 +42,20 @@ export default function EmptyState({ setOpen, setPrompt }) {
             )
           }
         >
-         Quote from the Pali Canon
+        a Quote from the Pali Canon
         </button>
         ,{" "}
         <button
           className="prompt-button"
           onClick={() =>
             setPrompt(
-              "Create riddles about Buddhist concepts and teachings"
+              "Create a Koan about Buddhist concepts and teachings"
             )
           }
         >
-         riddles 
+        a riddle 
         </button>
-        or even{" "}
+        {" "}and even{" "}
         <button
           className="prompt-button"
           onClick={() =>
@@ -64,7 +64,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
             )
           }
         >
-        AI and Sunyata
+        about AI and Sunyata
         </button>{" "}
       </p>
     

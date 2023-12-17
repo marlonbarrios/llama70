@@ -194,8 +194,8 @@ export default function SlideOver({
                                 id="temperature-description"
                               >
                                 Adjusts randomness of outputs, greater than 1 is
-                                random and 0 is deterministic, 0.75 is a good
-                                starting value.
+                                random and 0 is deterministic, 0.1 is a good
+                                starting value for deterministic outputs.
                               </p>
                               <div className="mt-3">
                                 <input

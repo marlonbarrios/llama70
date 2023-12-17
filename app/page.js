@@ -97,7 +97,7 @@ export default function HomePage() {
   const [systemPrompt, setSystemPrompt] = useState(
     "You are a helpful assistant."
   );
-  const [temp, setTemp] = useState(0.75);
+  const [temp, setTemp] = useState(0.1);
   const [topP, setTopP] = useState(0.9);
   const [maxTokens, setMaxTokens] = useState(800);
 

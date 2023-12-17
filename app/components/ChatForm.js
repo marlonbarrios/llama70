@@ -1,6 +1,6 @@
 import { Uploader } from "uploader";
 import Metrics from "./Metrics";
-import { CodeBracketIcon } from "@heroicons/react/20/solid";
+// import { CodeBracketIcon } from "@heroicons/react/20/solid";
 
 const uploader = Uploader({
   apiKey: "public_kW15biSARCJN7FAz6rANdRg3pNkh",
